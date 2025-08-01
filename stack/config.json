@@ -1,0 +1,12 @@
+{
+  "name": "HTML + CSS + JavaScript",
+  "value": "html-css-js",
+  "description": "Stack web classique avec HTML, CSS et JavaScript vanilla",
+  "frameworks": [
+    "HTML5",
+    "CSS3",
+    "JavaScript"
+  ],
+  "isCustom": false,
+  "createdAt": "2025-08-01T17:57:50.399Z"
+}

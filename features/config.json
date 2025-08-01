@@ -1,0 +1,42 @@
+{
+  "baseType": "ecommerce-store",
+  "features": [
+    {
+      "id": "product-catalog",
+      "name": "Catalogue Produits",
+      "category": "Base",
+      "isRequired": true,
+      "complexity": "simple"
+    },
+    {
+      "id": "shopping-cart",
+      "name": "Panier",
+      "category": "Base",
+      "isRequired": true,
+      "complexity": "simple"
+    },
+    {
+      "id": "checkout",
+      "name": "Paiement",
+      "category": "Base",
+      "isRequired": true,
+      "complexity": "simple"
+    },
+    {
+      "id": "user-account",
+      "name": "Compte Utilisateur",
+      "category": "Base",
+      "isRequired": true,
+      "complexity": "simple"
+    },
+    {
+      "id": "order-tracking",
+      "name": "Suivi de Commande",
+      "category": "Base",
+      "isRequired": true,
+      "complexity": "simple"
+    }
+  ],
+  "subTypes": [],
+  "featureSelections": []
+}

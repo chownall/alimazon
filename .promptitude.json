@@ -1,0 +1,506 @@
+{
+  "title": "Alimazon",
+  "rootPath": "/Users/vibecodefrance/DEVWORK/alimazon/alimazon",
+  "cursorRules": {
+    "content": "",
+    "isFrozen": false,
+    "version": "1.0.0"
+  },
+  "stack": {
+    "name": "HTML + CSS + JavaScript",
+    "value": "html-css-js",
+    "description": "Stack web classique avec HTML, CSS et JavaScript vanilla",
+    "frameworks": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "isCustom": false
+  },
+  "features": {
+    "baseType": "ecommerce-store",
+    "projectType": "ecommerce-store",
+    "features": [
+      {
+        "id": "product-catalog",
+        "name": "Catalogue Produits",
+        "category": "Base",
+        "description": "Fonctionnalité de base: product-catalog",
+        "isRequired": true,
+        "complexity": "simple"
+      },
+      {
+        "id": "shopping-cart",
+        "name": "Panier",
+        "category": "Base",
+        "description": "Fonctionnalité de base: shopping-cart",
+        "isRequired": true,
+        "complexity": "simple"
+      },
+      {
+        "id": "checkout",
+        "name": "Paiement",
+        "category": "Base",
+        "description": "Fonctionnalité de base: checkout",
+        "isRequired": true,
+        "complexity": "simple"
+      },
+      {
+        "id": "user-account",
+        "name": "Compte Utilisateur",
+        "category": "Base",
+        "description": "Fonctionnalité de base: user-account",
+        "isRequired": true,
+        "complexity": "simple"
+      },
+      {
+        "id": "order-tracking",
+        "name": "Suivi de Commande",
+        "category": "Base",
+        "description": "Fonctionnalité de base: order-tracking",
+        "isRequired": true,
+        "complexity": "simple"
+      }
+    ],
+    "subTypes": [],
+    "featuresDetail": {
+      "projectType": "ecommerce-store",
+      "overview": {
+        "title": "Complete E-commerce Platform",
+        "description": "Online retail website with complete product management, shopping cart, payments and order tracking",
+        "target_audience": "Online merchants, stores, marketplaces",
+        "business_goals": [
+          "Sell products online",
+          "Manage inventory",
+          "Process payments",
+          "Track orders",
+          "Manage customers"
+        ]
+      },
+      "featuresDetail": {
+        "product-catalog": {
+          "name": "Product Catalog",
+          "description": "Display and management of product catalog",
+          "priority": "critical",
+          "specifications": {
+            "product_listing": {
+              "description": "Product listing with filters and search",
+              "components": [
+                "Responsive product grid",
+                "Filters by category, price, brand",
+                "Text search",
+                "Sort by popularity, price, novelty",
+                "Pagination or infinite scroll"
+              ],
+              "technical_requirements": [
+                "SEO optimization for each product",
+                "Optimized images and lazy loading",
+                "Clean URLs for each product",
+                "Structured metadata (Schema.org)"
+              ]
+            },
+            "product_detail": {
+              "description": "Detailed product page",
+              "components": [
+                "Image gallery with zoom",
+                "Product information (name, price, description)",
+                "Variant selector (size, color, etc.)",
+                "Add to cart button",
+                "Real-time stock",
+                "Customer reviews",
+                "Recommended products"
+              ],
+              "technical_requirements": [
+                "Product variant management",
+                "Dynamic price calculation",
+                "Stock management",
+                "Review integration"
+              ]
+            }
+          }
+        },
+        "shopping-cart": {
+          "name": "Shopping Cart",
+          "description": "Cart management and checkout process",
+          "priority": "critical",
+          "specifications": {
+            "cart_management": {
+              "description": "User cart management",
+              "components": [
+                "Add/remove products",
+                "Quantity modification",
+                "Automatic total calculation",
+                "Promo codes and discounts",
+                "Cart persistence",
+                "Mini-cart in header"
+              ],
+              "technical_requirements": [
+                "Cart persistence (session/localStorage)",
+                "Tax calculation based on location",
+                "Shipping cost management",
+                "Stock validation"
+              ]
+            },
+            "checkout_process": {
+              "description": "Order finalization process",
+              "components": [
+                "Customer information form",
+                "Shipping method selection",
+                "Payment method selection",
+                "Order summary",
+                "Confirmation and order number"
+              ],
+              "technical_requirements": [
+                "Customer data validation",
+                "Payment API integration",
+                "Invoice generation",
+                "Confirmation email sending"
+              ]
+            }
+          }
+        },
+        "payment-processing": {
+          "name": "Payment Processing",
+          "description": "Payment system integration",
+          "priority": "critical",
+          "specifications": {
+            "payment_methods": {
+              "description": "Support for multiple payment methods",
+              "methods": [
+                {
+                  "name": "Credit cards",
+                  "providers": [
+                    "Stripe",
+                    "PayPal",
+                    "Square"
+                  ],
+                  "features": [
+                    "3D Secure",
+                    "Tokenization",
+                    "Refunds"
+                  ]
+                },
+                {
+                  "name": "Digital payments",
+                  "providers": [
+                    "PayPal",
+                    "Apple Pay",
+                    "Google Pay"
+                  ],
+                  "features": [
+                    "One-click payment",
+                    "Enhanced security"
+                  ]
+                },
+                {
+                  "name": "Bank transfers",
+                  "features": [
+                    "IBAN",
+                    "Manual confirmation"
+                  ]
+                }
+              ],
+              "technical_requirements": [
+                "SSL/TLS encryption",
+                "PCI DSS compliance",
+                "Payment error handling",
+                "Webhooks for notifications"
+              ]
+            },
+            "security": {
+              "description": "Transaction security",
+              "requirements": [
+                "Sensitive data encryption",
+                "Server-side validation",
+                "Fraud protection",
+                "Transaction audit trail"
+              ]
+            }
+          }
+        },
+        "order-tracking": {
+          "name": "Order Tracking",
+          "description": "Order tracking and management system",
+          "priority": "high",
+          "specifications": {
+            "order_management": {
+              "description": "Complete order management",
+              "components": [
+                "Order dashboard",
+                "Order statuses (pending, paid, shipped, delivered)",
+                "Order history",
+                "Status notifications",
+                "Tracking numbers"
+              ],
+              "technical_requirements": [
+                "Order database",
+                "Notification system",
+                "Carrier integration",
+                "Label generation"
+              ]
+            },
+            "customer_tracking": {
+              "description": "Customer-side tracking",
+              "components": [
+                "Order tracking page",
+                "Email/SMS notifications",
+                "Purchase history",
+                "Invoice download"
+              ]
+            }
+          }
+        },
+        "inventory-management": {
+          "name": "Inventory Management",
+          "description": "Stock management system",
+          "priority": "high",
+          "specifications": {
+            "stock_management": {
+              "description": "Real-time stock management",
+              "components": [
+                "Stock quantity tracking",
+                "Low stock alerts",
+                "Reservation management",
+                "Multi-warehouse synchronization",
+                "Stock reports"
+              ],
+              "technical_requirements": [
+                "Real-time database",
+                "Locking system",
+                "API for integrations",
+                "Backup and recovery"
+              ]
+            },
+            "product_management": {
+              "description": "Product management",
+              "components": [
+                "Product CRUD",
+                "Category management",
+                "Data import/export",
+                "Image management",
+                "Product SEO"
+              ]
+            }
+          }
+        },
+        "customer-reviews": {
+          "name": "Customer Reviews",
+          "description": "Review and rating system",
+          "priority": "medium",
+          "specifications": {
+            "review_system": {
+              "description": "Product review system",
+              "components": [
+                "Review forms",
+                "Star ratings",
+                "Review moderation",
+                "Photos in reviews",
+                "Verified reviews"
+              ],
+              "technical_requirements": [
+                "Review database",
+                "Moderation system",
+                "Average calculation",
+                "Anti-spam protection"
+              ]
+            },
+            "rating_display": {
+              "description": "Rating display",
+              "components": [
+                "Interactive stars",
+                "Product averages",
+                "Rating filters",
+                "Recent reviews",
+                "Most helpful reviews"
+              ]
+            }
+          }
+        }
+      },
+      "technicalArchitecture": {
+        "frontend": {
+          "framework": "React/Vue.js/Angular",
+          "components": [
+            "ProductGrid",
+            "ProductDetail",
+            "ShoppingCart",
+            "CheckoutForm",
+            "OrderTracking",
+            "ReviewSystem"
+          ],
+          "features": [
+            "Responsive design",
+            "PWA capabilities",
+            "SEO optimization",
+            "Performance optimization"
+          ]
+        },
+        "backend": {
+          "framework": "Node.js/Python/PHP",
+          "apis": [
+            "Product API",
+            "Cart API",
+            "Payment API",
+            "Order API",
+            "Inventory API",
+            "Review API"
+          ],
+          "database": "PostgreSQL/MySQL/MongoDB",
+          "features": [
+            "RESTful APIs",
+            "Authentication/Authorization",
+            "Rate limiting",
+            "Caching",
+            "Logging"
+          ]
+        },
+        "integrations": [
+          "Payment gateways (Stripe, PayPal)",
+          "Shipping providers",
+          "Email services",
+          "Analytics (Google Analytics)",
+          "CRM systems"
+        ]
+      },
+      "uiUxRequirements": {
+        "design_principles": [
+          "Intuitive and easy-to-use interface",
+          "Optimized checkout process",
+          "Responsive design for all devices",
+          "Accessibility (WCAG 2.1)",
+          "Performance and speed"
+        ],
+        "key_pages": [
+          {
+            "name": "Homepage",
+            "elements": [
+              "Hero section",
+              "Featured products",
+              "Categories",
+              "Promotions"
+            ]
+          },
+          {
+            "name": "Product catalog",
+            "elements": [
+              "Filters",
+              "Product grid",
+              "Pagination",
+              "Search"
+            ]
+          },
+          {
+            "name": "Product detail",
+            "elements": [
+              "Image gallery",
+              "Product information",
+              "Reviews",
+              "Similar products"
+            ]
+          },
+          {
+            "name": "Shopping cart",
+            "elements": [
+              "Product list",
+              "Totals",
+              "Promo codes",
+              "Checkout button"
+            ]
+          },
+          {
+            "name": "Checkout",
+            "elements": [
+              "Forms",
+              "Shipping selection",
+              "Payment",
+              "Confirmation"
+            ]
+          }
+        ]
+      },
+      "performanceRequirements": {
+        "page_load": "Less than 3 seconds",
+        "optimizations": [
+          "Image lazy loading",
+          "Code splitting",
+          "Data caching",
+          "CDN for assets",
+          "Database query optimization"
+        ]
+      },
+      "securityRequirements": {
+        "authentication": "JWT or session-based",
+        "data_protection": [
+          "Sensitive data encryption",
+          "HTTPS required",
+          "CSRF protection",
+          "Input validation",
+          "Rate limiting"
+        ],
+        "payment_security": [
+          "PCI DSS compliance",
+          "Card tokenization",
+          "3D Secure",
+          "Fraud monitoring"
+        ]
+      },
+      "examples": [
+        "Amazon",
+        "eBay",
+        "Shopify stores",
+        "WooCommerce sites"
+      ],
+      "estimatedDevelopmentTime": "8-12 weeks",
+      "complexityLevel": "moderate",
+      "teamSize": "3-5 developers"
+    }
+  },
+  "aesthetics": {
+    "id": "modern",
+    "name": "Moderne",
+    "description": "Design épuré et contemporain avec des lignes nettes",
+    "characteristics": [
+      "Minimaliste",
+      "Espacement généreux",
+      "Typographie claire",
+      "Couleurs neutres"
+    ],
+    "typography": "Sans-serif moderne (Inter, Roboto, SF Pro)",
+    "useCases": [
+      "Sites d'entreprise",
+      "Applications SaaS",
+      "Portfolios"
+    ],
+    "examples": [
+      "Stripe",
+      "Linear",
+      "Vercel"
+    ]
+  },
+  "colorData": {
+    "id": "bi-lime-orange",
+    "name": "Lime-Orange",
+    "type": "bi",
+    "colors": [
+      "#CDDC39",
+      "#FF9800",
+      "#C0CA33",
+      "#F57C00",
+      "#AFB42B",
+      "#EF6C00",
+      "#9E9D24",
+      "#E65100",
+      "#F9FBE7",
+      "#FFF3E0"
+    ],
+    "description": "Combinaison de limes et oranges énergiques"
+  },
+  "generate": {
+    "prompt": "# Prompt de Génération - Alimazon\n\n## 🎨 Exigence de Qualité\n**For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.**\n\n## Contexte\nGénérer un site web complet pour le projet \"Alimazon\" en utilisant la stack technique HTML + CSS + JavaScript.\nPour les images utiliser unsplash.com pour le  catalogue, les galleries ou tout autre besoin d'image, rester dans la thematique du projet.\n\n\n## Stack Technique\nStack web classique avec HTML, CSS et JavaScript vanilla\n**Frameworks**: HTML5, CSS3, JavaScript\n\n\n\n## Méthode\nLire attentivement chaque détail des spécifications\nLire attentivement chaque détail des spécifications des modules\nImplémenter d'abord les aspects visuels demandés\nVérifier que chaque point technique est respecté\n\n## Type de Projet\necommerce-store\n\n## Fonctionnalités à Implémenter\n- Catalogue Produits\n- Panier\n- Paiement\n- Compte Utilisateur\n- Suivi de Commande\n\n\n## 🎨 Style et Esthétique\n**Esthétique**: Moderne\n**Description**: Design épuré et contemporain avec des lignes nettes\n**Caractéristiques**: Minimaliste, Espacement généreux, Typographie claire, Couleurs neutres\n**Typographie**: Sans-serif moderne (Inter, Roboto, SF Pro)\n**Cas d'usage**: Sites d'entreprise, Applications SaaS, Portfolios\n\n\n## 🌈 Palette de Couleurs\n**Palette**: Lime-Orange\n**Type**: bi\n**Description**: Combinaison de limes et oranges énergiques\n**Couleurs**: #CDDC39, #FF9800, #C0CA33, #F57C00, #AFB42B, #EF6C00, #9E9D24, #E65100, #F9FBE7, #FFF3E0\n\n\n## Instructions\n1. Créer une architecture complète du projet\n2. Générer tous les fichiers nécessaires\n3. Implémenter chaque fonctionnalité en détail\n4. Ajouter la documentation et les tests\n5. Préparer le déploiement\n\n## Structure Attendue\n- Architecture claire et modulaire\n- Code propre et bien documenté\n- Tests unitaires et d'intégration\n- Documentation utilisateur et technique\n- Configuration de déploiement\n\n## 🎯 RÈGLES CURSOR POUR L'IA\n\nAucune règle Cursor définie\n\n---\n*Généré automatiquement le 01/08/2025*\n",
+    "isGenerated": true,
+    "lastGenerated": "2025-08-01T17:57:50.404Z",
+    "outputPath": "/Users/vibecodefrance/DEVWORK/alimazon/alimazon/generate"
+  },
+  "createdAt": "2025-08-01T17:57:50.403Z",
+  "updatedAt": "2025-08-01T17:57:50.403Z"
+}

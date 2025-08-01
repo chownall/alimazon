@@ -1,0 +1,133 @@
+{
+  "aesthetics": {
+    "id": "modern",
+    "name": "Moderne",
+    "description": "Design épuré et contemporain avec des lignes nettes",
+    "characteristics": [
+      "Minimaliste",
+      "Espacement généreux",
+      "Typographie claire",
+      "Couleurs neutres"
+    ],
+    "typography": "Sans-serif moderne (Inter, Roboto, SF Pro)",
+    "useCases": [
+      "Sites d'entreprise",
+      "Applications SaaS",
+      "Portfolios"
+    ],
+    "examples": [
+      "Stripe",
+      "Linear",
+      "Vercel"
+    ]
+  },
+  "colorData": {
+    "id": "bi-lime-orange",
+    "name": "Lime-Orange",
+    "type": "bi",
+    "colors": [
+      "#CDDC39",
+      "#FF9800",
+      "#C0CA33",
+      "#F57C00",
+      "#AFB42B",
+      "#EF6C00",
+      "#9E9D24",
+      "#E65100",
+      "#F9FBE7",
+      "#FFF3E0"
+    ],
+    "description": "Combinaison de limes et oranges énergiques"
+  },
+  "featureSelections": [],
+  "selectionMode": "default",
+  "globalStyle": null,
+  "standardParams": {
+    "projectType": "website-vitrine",
+    "aesthetic": "modern",
+    "colorScheme": "mono-blue",
+    "assets": {
+      "images": {
+        "hero": [
+          "hero-modern-business.jpg",
+          "hero-clean-office.jpg",
+          "hero-minimal-design.jpg"
+        ],
+        "gallery": [
+          "gallery-modern-1.jpg",
+          "gallery-modern-2.jpg",
+          "gallery-modern-3.jpg"
+        ],
+        "backgrounds": [
+          "bg-gradient-blue.jpg",
+          "bg-pattern-dots.jpg",
+          "bg-geometric.jpg"
+        ],
+        "illustrations": [
+          "illustration-modern.svg",
+          "illustration-business.svg"
+        ],
+        "logos": [
+          "logo-modern.svg",
+          "logo-minimal.svg"
+        ]
+      },
+      "icons": {
+        "navigation": [
+          "menu.svg",
+          "close.svg",
+          "arrow-right.svg"
+        ],
+        "actions": [
+          "play.svg",
+          "download.svg",
+          "share.svg"
+        ],
+        "social": [
+          "facebook.svg",
+          "twitter.svg",
+          "linkedin.svg"
+        ],
+        "features": [
+          "feature-1.svg",
+          "feature-2.svg",
+          "feature-3.svg"
+        ]
+      },
+      "fonts": {
+        "headings": [
+          "Inter",
+          "Roboto",
+          "SF Pro Display"
+        ],
+        "body": [
+          "Inter",
+          "Roboto",
+          "SF Pro Text"
+        ],
+        "accent": [
+          "Inter",
+          "Roboto"
+        ]
+      }
+    },
+    "recommendations": {
+      "imageSources": [
+        "Unsplash",
+        "Pexels",
+        "Pixabay"
+      ],
+      "iconLibraries": [
+        "Feather Icons",
+        "Heroicons",
+        "Lucide"
+      ],
+      "fontFamilies": [
+        "Inter",
+        "Roboto",
+        "SF Pro"
+      ]
+    }
+  },
+  "assetsPrompt": "\n# Assets Recommendations for website-vitrine (modern aesthetic)\n\n## Image Sources\n- Unsplash\n- Pexels\n- Pixabay\n\n## Icon Libraries\n- Feather Icons\n- Heroicons\n- Lucide\n\n## Font Families\n- Inter\n- Roboto\n- SF Pro\n\n## Specific Assets Needed\n\n### Hero Images\n- hero-modern-business.jpg\n- hero-clean-office.jpg\n- hero-minimal-design.jpg\n\n### Gallery Images\n- gallery-modern-1.jpg\n- gallery-modern-2.jpg\n- gallery-modern-3.jpg\n\n### Background Images\n- bg-gradient-blue.jpg\n- bg-pattern-dots.jpg\n- bg-geometric.jpg\n\n### Illustrations\n- illustration-modern.svg\n- illustration-business.svg\n\n### Icons\n- Navigation: menu.svg, close.svg, arrow-right.svg\n- Actions: play.svg, download.svg, share.svg\n- Social: facebook.svg, twitter.svg, linkedin.svg\n- Features: feature-1.svg, feature-2.svg, feature-3.svg\n\n### Fonts\n- Headings: Inter, Roboto, SF Pro Display\n- Body: Inter, Roboto, SF Pro Text\n- Accent: Inter, Roboto\n\n## Color Scheme\nUse the mono-blue color palette for consistent theming.\n\n## Implementation Notes\n- Ensure all images are optimized for web (WebP format preferred)\n- Use SVG icons for scalability\n- Implement lazy loading for gallery images\n- Consider dark/light mode variations\n- Ensure accessibility compliance for all assets\n"
+}
