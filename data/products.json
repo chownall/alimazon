@@ -1,0 +1,351 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MacBook Pro 16\"",
+      "category": "electronics",
+      "categoryName": "Électronique",
+      "price": 2499.99,
+      "originalPrice": 2799.99,
+      "description": "Le MacBook Pro 16 pouces offre des performances exceptionnelles pour les professionnels créatifs.",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.8,
+      "reviews": 234,
+      "stock": 15,
+      "featured": true,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Processeur": "Apple M2 Pro",
+        "RAM": "16 GB",
+        "Stockage": "512 GB SSD",
+        "Écran": "16 pouces Retina"
+      }
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15 Pro Max",
+      "category": "electronics",
+      "categoryName": "Électronique",
+      "price": 1199.99,
+      "originalPrice": null,
+      "description": "L'iPhone le plus avancé avec un appareil photo révolutionnaire et une puce A17 Pro.",
+      "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.9,
+      "reviews": 567,
+      "stock": 25,
+      "featured": true,
+      "new": true,
+      "onSale": false,
+      "specifications": {
+        "Écran": "6.7 pouces Super Retina XDR",
+        "Processeur": "A17 Pro",
+        "Stockage": "256 GB",
+        "Caméra": "48 MP principal"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Sony WH-1000XM5",
+      "category": "electronics",
+      "categoryName": "Électronique",
+      "price": 379.99,
+      "originalPrice": 399.99,
+      "description": "Casque à réduction de bruit leader du marché avec une qualité audio exceptionnelle.",
+      "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.7,
+      "reviews": 892,
+      "stock": 45,
+      "featured": false,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Type": "Circum-aural sans fil",
+        "Réduction de bruit": "Active",
+        "Autonomie": "30 heures",
+        "Connectivité": "Bluetooth 5.2"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Manteau d'hiver élégant",
+      "category": "fashion",
+      "categoryName": "Mode",
+      "price": 189.99,
+      "originalPrice": 249.99,
+      "description": "Manteau d'hiver chaud et élégant, parfait pour les journées froides.",
+      "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.5,
+      "reviews": 143,
+      "stock": 20,
+      "featured": true,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Matière": "70% Laine, 30% Polyester",
+        "Doublure": "100% Polyester",
+        "Tailles": "S, M, L, XL",
+        "Couleurs": "Noir, Gris, Beige"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sneakers Urban Style",
+      "category": "fashion",
+      "categoryName": "Mode",
+      "price": 129.99,
+      "originalPrice": null,
+      "description": "Sneakers tendance et confortables pour un look urbain moderne.",
+      "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.6,
+      "reviews": 298,
+      "stock": 35,
+      "featured": true,
+      "new": true,
+      "onSale": false,
+      "specifications": {
+        "Matière extérieure": "Cuir synthétique",
+        "Semelle": "Caoutchouc",
+        "Tailles": "36-46",
+        "Style": "Urbain"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Canapé Scandinave 3 places",
+      "category": "home",
+      "categoryName": "Maison",
+      "price": 899.99,
+      "originalPrice": 1199.99,
+      "description": "Canapé moderne au design scandinave, confortable et élégant.",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.7,
+      "reviews": 89,
+      "stock": 8,
+      "featured": true,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Dimensions": "200 x 85 x 85 cm",
+        "Revêtement": "Tissu polyester",
+        "Structure": "Bois massif",
+        "Couleur": "Gris clair"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Lampe de bureau LED moderne",
+      "category": "home",
+      "categoryName": "Maison",
+      "price": 79.99,
+      "originalPrice": null,
+      "description": "Lampe de bureau LED avec bras articulé et variateur d'intensité.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.4,
+      "reviews": 167,
+      "stock": 50,
+      "featured": false,
+      "new": true,
+      "onSale": false,
+      "specifications": {
+        "Puissance": "12W LED",
+        "Température de couleur": "3000K-6500K",
+        "Matériaux": "Aluminium et ABS",
+        "Port USB": "Intégré"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Vélo de route Carbon Pro",
+      "category": "sports",
+      "categoryName": "Sports",
+      "price": 2299.99,
+      "originalPrice": 2799.99,
+      "description": "Vélo de route haute performance avec cadre en carbone ultra-léger.",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1553978297-833d09932d31?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.8,
+      "reviews": 45,
+      "stock": 5,
+      "featured": true,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Cadre": "Carbone T800",
+        "Groupe": "Shimano Ultegra",
+        "Poids": "7.2 kg",
+        "Tailles": "S, M, L, XL"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Tapis de yoga Premium",
+      "category": "sports",
+      "categoryName": "Sports",
+      "price": 49.99,
+      "originalPrice": null,
+      "description": "Tapis de yoga antidérapant haute densité pour une pratique confortable.",
+      "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.6,
+      "reviews": 312,
+      "stock": 100,
+      "featured": false,
+      "new": true,
+      "onSale": false,
+      "specifications": {
+        "Dimensions": "183 x 61 cm",
+        "Épaisseur": "6 mm",
+        "Matière": "TPE écologique",
+        "Poids": "1.2 kg"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Set de maquillage professionnel",
+      "category": "beauty",
+      "categoryName": "Beauté",
+      "price": 89.99,
+      "originalPrice": 119.99,
+      "description": "Kit complet de maquillage professionnel avec pinceaux et palette.",
+      "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.7,
+      "reviews": 189,
+      "stock": 30,
+      "featured": true,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Contenu": "24 pinceaux, 48 couleurs",
+        "Matière pinceaux": "Poils synthétiques",
+        "Étui": "Cuir synthétique",
+        "Sans cruauté": "Oui"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Console de jeux NextGen",
+      "category": "toys",
+      "categoryName": "Jouets",
+      "price": 499.99,
+      "originalPrice": null,
+      "description": "Console de jeux nouvelle génération avec graphismes 4K et SSD ultra-rapide.",
+      "image": "https://images.unsplash.com/photo-1605901309584-818e25960a8f?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1605901309584-818e25960a8f?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.9,
+      "reviews": 1234,
+      "stock": 12,
+      "featured": true,
+      "new": true,
+      "onSale": false,
+      "specifications": {
+        "Processeur": "8-core AMD Zen 2",
+        "GPU": "10.3 TFLOPS",
+        "Stockage": "825 GB SSD",
+        "Résolution": "Jusqu'à 8K"
+      }
+    },
+    {
+      "id": 12,
+      "name": "LEGO Architecture Paris",
+      "category": "toys",
+      "categoryName": "Jouets",
+      "price": 49.99,
+      "originalPrice": 59.99,
+      "description": "Reproduisez les monuments emblématiques de Paris avec ce set LEGO Architecture.",
+      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=800&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=800&fit=crop"
+      ],
+      "rating": 4.6,
+      "reviews": 78,
+      "stock": 40,
+      "featured": false,
+      "new": false,
+      "onSale": true,
+      "specifications": {
+        "Pièces": "649",
+        "Âge recommandé": "12+",
+        "Dimensions": "28 x 11 x 22 cm",
+        "Monuments": "Tour Eiffel, Arc de Triomphe, Louvre"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Électronique",
+      "icon": "📱",
+      "count": 3
+    },
+    {
+      "id": "fashion",
+      "name": "Mode",
+      "icon": "👕",
+      "count": 2
+    },
+    {
+      "id": "home",
+      "name": "Maison",
+      "icon": "🏠",
+      "count": 2
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "icon": "⚽",
+      "count": 2
+    },
+    {
+      "id": "beauty",
+      "name": "Beauté",
+      "icon": "💄",
+      "count": 1
+    },
+    {
+      "id": "toys",
+      "name": "Jouets",
+      "icon": "🎮",
+      "count": 2
+    }
+  ]
+}

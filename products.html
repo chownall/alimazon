@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez notre catalogue de produits - Alimazon">
+    <title>Catalogue Produits - Alimazon</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#CDDC39"/>
+                            <path d="M8 20L16 8L24 20H8Z" fill="#FF9800"/>
+                        </svg>
+                        <span class="logo__text">Alimazon</span>
+                    </a>
+                </div>
+                
+                <div class="header__search">
+                    <form class="search-form" id="searchForm">
+                        <input type="search" placeholder="Rechercher des produits..." class="search-form__input" id="searchInput">
+                        <button type="submit" class="search-form__button">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19 19L13 13L19 19ZM15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="header__actions">
+                    <button class="header__action" id="accountBtn" title="Mon compte">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="header__action-text">Compte</span>
+                    </button>
+                    
+                    <button class="header__action header__cart" id="cartBtn" title="Panier">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="header__action-text">Panier</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="header__nav">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="#" class="nav-menu__link nav-menu__link--categories">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M3 5H17M3 10H17M3 15H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Toutes les catégories
+                        </a>
+                    </li>
+                    <li class="nav-menu__item"><a href="products.html" class="nav-menu__link nav-menu__link--active">Nouveautés</a></li>
+                    <li class="nav-menu__item"><a href="products.html?category=electronics" class="nav-menu__link">Électronique</a></li>
+                    <li class="nav-menu__item"><a href="products.html?category=fashion" class="nav-menu__link">Mode</a></li>
+                    <li class="nav-menu__item"><a href="products.html?category=home" class="nav-menu__link">Maison</a></li>
+                    <li class="nav-menu__item"><a href="products.html?category=sports" class="nav-menu__link">Sports</a></li>
+                    <li class="nav-menu__item"><a href="products.html?promo=true" class="nav-menu__link nav-menu__link--promo">Promotions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb__nav">
+                    <a href="index.html" class="breadcrumb__link">Accueil</a>
+                    <span class="breadcrumb__separator">/</span>
+                    <span class="breadcrumb__current" id="breadcrumbCurrent">Tous les produits</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <section class="products-page section">
+            <div class="container">
+                <div class="products-page__layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="products-page__sidebar">
+                        <div class="filters">
+                            <div class="filters__header">
+                                <h2 class="filters__title">Filtres</h2>
+                                <button class="filters__clear" id="clearFilters">Tout effacer</button>
+                            </div>
+
+                            <!-- Categories Filter -->
+                            <div class="filter-group">
+                                <h3 class="filter-group__title">Catégories</h3>
+                                <div class="filter-group__content" id="categoriesFilter">
+                                    <!-- Les catégories seront chargées dynamiquement -->
+                                </div>
+                            </div>
+
+                            <!-- Price Filter -->
+                            <div class="filter-group">
+                                <h3 class="filter-group__title">Prix</h3>
+                                <div class="filter-group__content">
+                                    <div class="price-range">
+                                        <input type="number" class="price-range__input" id="minPrice" placeholder="Min" min="0">
+                                        <span class="price-range__separator">–</span>
+                                        <input type="number" class="price-range__input" id="maxPrice" placeholder="Max" min="0">
+                                    </div>
+                                    <button class="btn btn--outline btn--small" id="applyPriceFilter">Appliquer</button>
+                                </div>
+                            </div>
+
+                            <!-- Additional Filters -->
+                            <div class="filter-group">
+                                <h3 class="filter-group__title">Options</h3>
+                                <div class="filter-group__content">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" id="filterOnSale">
+                                        <span class="filter-checkbox__label">En promotion</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" id="filterNew">
+                                        <span class="filter-checkbox__label">Nouveautés</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" id="filterInStock">
+                                        <span class="filter-checkbox__label">En stock uniquement</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Rating Filter -->
+                            <div class="filter-group">
+                                <h3 class="filter-group__title">Note minimale</h3>
+                                <div class="filter-group__content">
+                                    <div class="rating-filter" id="ratingFilter">
+                                        <button class="rating-filter__option" data-rating="4">
+                                            <span class="rating-filter__stars">★★★★☆</span>
+                                            <span>& plus</span>
+                                        </button>
+                                        <button class="rating-filter__option" data-rating="3">
+                                            <span class="rating-filter__stars">★★★☆☆</span>
+                                            <span>& plus</span>
+                                        </button>
+                                        <button class="rating-filter__option" data-rating="2">
+                                            <span class="rating-filter__stars">★★☆☆☆</span>
+                                            <span>& plus</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Products Content -->
+                    <div class="products-page__content">
+                        <!-- Products Header -->
+                        <div class="products-header">
+                            <h1 class="products-header__title" id="pageTitle">Tous les produits</h1>
+                            <div class="products-header__controls">
+                                <div class="products-header__count">
+                                    <span id="productCount">0</span> produits
+                                </div>
+                                <div class="products-header__sort">
+                                    <label for="sortSelect" class="sr-only">Trier par</label>
+                                    <select class="form-control" id="sortSelect">
+                                        <option value="">Pertinence</option>
+                                        <option value="price-asc">Prix croissant</option>
+                                        <option value="price-desc">Prix décroissant</option>
+                                        <option value="name-asc">Nom A-Z</option>
+                                        <option value="name-desc">Nom Z-A</option>
+                                        <option value="rating">Meilleures notes</option>
+                                        <option value="newest">Plus récents</option>
+                                    </select>
+                                </div>
+                                <button class="products-header__filter-toggle" id="filterToggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                                    </svg>
+                                    Filtres
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Active Filters -->
+                        <div class="active-filters" id="activeFilters" style="display: none;">
+                            <div class="active-filters__list" id="activeFiltersList">
+                                <!-- Les filtres actifs seront affichés ici -->
+                            </div>
+                        </div>
+
+                        <!-- Products Grid -->
+                        <div class="products__grid" id="productsGrid">
+                            <!-- Les produits seront chargés ici -->
+                            <div class="loading loading--large"></div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination" id="pagination">
+                            <!-- La pagination sera générée dynamiquement -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__column">
+                    <h3 class="footer__title">À propos</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Qui sommes-nous</a></li>
+                        <li><a href="#" class="footer__link">Nos engagements</a></li>
+                        <li><a href="#" class="footer__link">Carrières</a></li>
+                        <li><a href="#" class="footer__link">Presse</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Service client</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Contactez-nous</a></li>
+                        <li><a href="#" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Livraison</a></li>
+                        <li><a href="#" class="footer__link">Retours</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Mon compte</h3>
+                    <ul class="footer__list">
+                        <li><a href="account.html" class="footer__link">Se connecter</a></li>
+                        <li><a href="account.html#register" class="footer__link">Créer un compte</a></li>
+                        <li><a href="orders.html" class="footer__link">Mes commandes</a></li>
+                        <li><a href="account.html#wishlist" class="footer__link">Ma liste de souhaits</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Suivez-nous</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.95719 14.8821 3.28445C14.0247 3.61171 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5932 15.1514 13.8416 15.5297C13.0901 15.9079 12.2385 16.0396 11.4078 15.9059C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1902 8.22774 13.4229 8.09408 12.5922C7.96042 11.7615 8.09208 10.9099 8.47034 10.1584C8.84859 9.40685 9.45419 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 Alimazon. Tous droits réservés.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Conditions d'utilisation</a>
+                    <a href="#" class="footer__link">Politique de confidentialité</a>
+                    <a href="#" class="footer__link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-sidebar__header">
+            <h2 class="cart-sidebar__title">Mon panier</h2>
+            <button class="cart-sidebar__close" id="cartClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-sidebar__content" id="cartContent">
+            <!-- Le contenu du panier sera chargé ici -->
+        </div>
+        <div class="cart-sidebar__footer">
+            <div class="cart-sidebar__total">
+                <span>Total</span>
+                <span id="cartTotal">0,00 €</span>
+            </div>
+            <a href="checkout.html" class="btn btn--primary btn--block">Commander</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/productsPage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
